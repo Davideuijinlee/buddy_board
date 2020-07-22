@@ -1,0 +1,15 @@
+.sidenav {
+    background-color: white;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+    height: 100%;
+    width: $navigation-width;
+
+    &__list {
+        align-items: center;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+        width: 100%;
+    }
+}
