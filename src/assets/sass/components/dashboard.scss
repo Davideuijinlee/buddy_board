@@ -1,0 +1,5 @@
+.dashboard {
+    height: 100%;
+    margin-left: $sidenav-width;
+    width: calc(#{100%} - #{$sidenav-width});
+}

@@ -2,7 +2,8 @@
     background-color: white;
     border-right: 1px solid rgba(0, 0, 0, 0.12);
     height: 100%;
-    width: $navigation-width;
+    position: fixed;
+    width: $sidenav-width;
 
     &__list {
         align-items: center;
