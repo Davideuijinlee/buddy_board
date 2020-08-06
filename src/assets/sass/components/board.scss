@@ -1,0 +1,19 @@
+.board {
+    // background-color: #8F67FF; 
+    height: 70%;
+    width: 100%;
+
+    .wall-photo {
+        &__wrapper {
+            background: red;
+            height: 200px;
+        }
+    }
+
+    .wall-problem {
+        &__wrapper {
+            background: purple;
+            height: 200px;
+        }
+    }
+}
