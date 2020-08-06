@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 
-import Activity from './Activity';
-import Data from './Data';
+import Stats from './Stats';
+import Board from './Board';
 import Entry from './Entry';
 import Navigation from '../Navigation';
 
@@ -11,8 +11,8 @@ export default props => {
             <Navigation/>
             <div id="dashboard" className="dashboard">
                 <Entry/>
-                <Data/>
-                <Activity/>
+                <Board/>
+                <Stats/>
             </div>
         </Fragment>
         
