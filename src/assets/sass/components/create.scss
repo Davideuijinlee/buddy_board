@@ -1,0 +1,45 @@
+.create {
+    height: 100%;
+    margin-left: $sidenav-width;
+    width: calc(#{100%} - #{$sidenav-width});
+
+    &__wrapper {
+        align-items: center;
+        display: flex;
+        background: blue;
+        display: flex;
+        height: 100%;
+    }
+    &__wall {
+        &__container {
+            align-items: center;
+            background: red;
+            display: flex;
+            justify-content: center;
+            height: 80%;
+        }
+        &__photo {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__holds {
+        &__container {
+            align-items: center;
+            display: flex;
+            height: 80%;
+        }
+        &__actions {
+            background: purple;
+            height: 20rem;
+            padding: 0;
+
+            &__type {
+                background: chartreuse;
+                border-bottom: 1px black solid;
+                height: 5rem;
+            }
+        }
+    }
+}

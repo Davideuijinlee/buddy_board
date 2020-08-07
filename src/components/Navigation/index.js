@@ -14,7 +14,7 @@ export default props => {
                             <NavLink className="sidenav__link" to="/Log">Log</NavLink>
                         </li>
                         <li className="sidenav__item">
-                            <NavLink className="sidenav_link" to="/Journal">Journal</NavLink>
+                            <NavLink className="sidenav_link" to="/Create">Set Problems</NavLink>
                         </li>
                     </ul>
                 </div>
