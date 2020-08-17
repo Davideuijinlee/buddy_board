@@ -1,0 +1,74 @@
+.create {
+    height: 100%;
+    margin-left: $sidenav-width;
+    width: calc(#{100%} - #{$sidenav-width});
+
+    &__wrapper {
+        align-items: center;
+        display: flex;
+        background: blue;
+        display: flex;
+        height: 100%;
+    }
+    &__wall {
+        &__container {
+            align-items: center;
+            background: red;
+            display: flex;
+            justify-content: center;
+            height: 80%;
+        }
+        &__photo {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__holds {
+        &__container {
+            align-items: center;
+            display: flex;
+            height: 80%;
+        }
+        &__actions {
+            cursor: -webkit-grab; 
+            cursor: grab;
+            background: purple;
+            height: 20rem;
+            padding: 0;
+
+            &:active {
+                cursor: -webkit-grabbing; 
+                cursor: grabbing;
+            }
+
+            &__type {
+                align-items: center;
+                display: flex;
+                font-size: 2rem;
+                justify-content: center;
+                border-bottom: 1px black solid;
+                height: 5rem;
+
+                &--start {
+                    color: #37da56;
+                }
+                &--feet {
+                    color: #f16906;
+                }
+                &--finish {
+                    color: #f4241d;                    ;
+                }
+                &--hands {
+                    color: #40c4ff;
+                }
+
+                &--icon {
+                    color: inherit;
+                    margin-left: 1rem;
+                    transform: scale(1.8);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.board {
+    height: 70%;
+    width: 100%;
+
+    .wall-photo {
+        &__wrapper {
+            background: red;
+            height: 20 rem;
+        }
+    }
+
+    .wall-problem {
+        &__wrapper {
+            background: purple;
+            height: 20 rem;
+        }
+    }
+}

@@ -1,16 +1,22 @@
-import React, {Fragment} from 'react';
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import '../assets/sass/main.scss';
 
-import Navigation from './Navigation';
+import Problems from './Problems';
+import Log from './Log';
+import CreateBoard from './Create';
+
 
 const App = () => {
     return (
-        <Fragment>
-            <Navigation/>
-            <section>Entries</section>
-            <section>Data</section>
-        </Fragment>
+        <BrowserRouter>
+            <Switch>
+                <Route exact path="/" component={Problems} />
+                <Route path="/Log" component={Log} />
+                <Route path="/create" component={CreateBoard} />
+            </Switch>
+        </BrowserRouter>
     )
 }
 
