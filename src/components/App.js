@@ -5,7 +5,7 @@ import '../assets/sass/main.scss';
 
 import Problems from './Problems';
 import Log from './Log';
-import Create from './Create';
+import CreateBoard from './Create';
 
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
             <Switch>
                 <Route exact path="/" component={Problems} />
                 <Route path="/Log" component={Log} />
-                <Route path="/create" component={Create} />
+                <Route path="/create" component={CreateBoard} />
             </Switch>
         </BrowserRouter>
     )

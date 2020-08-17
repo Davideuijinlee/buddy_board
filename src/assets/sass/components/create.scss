@@ -31,14 +31,43 @@
             height: 80%;
         }
         &__actions {
+            cursor: -webkit-grab; 
+            cursor: grab;
             background: purple;
             height: 20rem;
             padding: 0;
 
+            &:active {
+                cursor: -webkit-grabbing; 
+                cursor: grabbing;
+            }
+
             &__type {
-                background: chartreuse;
+                align-items: center;
+                display: flex;
+                font-size: 2rem;
+                justify-content: center;
                 border-bottom: 1px black solid;
                 height: 5rem;
+
+                &--start {
+                    color: #37da56;
+                }
+                &--feet {
+                    color: #f16906;
+                }
+                &--finish {
+                    color: #f4241d;                    ;
+                }
+                &--hands {
+                    color: #40c4ff;
+                }
+
+                &--icon {
+                    color: inherit;
+                    margin-left: 1rem;
+                    transform: scale(1.8);
+                }
             }
         }
     }
